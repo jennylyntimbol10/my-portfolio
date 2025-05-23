@@ -3,64 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Developer Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>Tayler • Creative Developer</title>
+
+  <!-- Google Font – Inter (similar to the mock-up’s modern grotesque) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<header>
-  <h1>Your Name</h1>
-  <p>Full Stack Developer & Creative Technologist</p>
+  <!-- ─────────────────────────  Top Bar  ───────────────────────── -->
+  <header class="topbar">
+    <div class="logo">JRT<span class="dot">•</span></div>
 
-  <!-- Dark mode toggle button -->
-  <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+    <nav class="main-nav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <!-- Navigation -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="#contact" class="cta-btn">Let’s talk</a>
+  </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    Hi! I'm a passionate developer focused on building clean and efficient web applications.
-    I love working with modern technologies and turning ideas into reality through code.
-    When I'm not coding, I enjoy photography and hiking.
-  </p>
-</section>
+  <!-- ─────────────────────────  HERO  ───────────────────────── -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>
+        Hi, I’m <span class="red">Jennylyn</span>.<br>
+        A creative <span class="red">•</span> developer<br>
+        based in Philippines
+      </h1>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div id="projects-container"></div>
-</section>
+      <ul class="hero-tags">
+        <li>Design</li>
+        <li>Development</li>
+        <li>Webflow</li>
+      </ul>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form id="contactForm" novalidate>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required minlength="2" />
+      <div class="hero-actions">
+        <a href="#work" class="btn primary">Got a project?</a>
+        <a href="#contact" class="btn">Let’s talk</a>
+      </div>
+    </div>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required />
+    <figure class="hero-photo">
+      <!--  Replace with your own transparent-background headshot  -->
+      <img src="assets/images/Me.jpg" alt="Jennylyn Timbol"> sd
+    </figure>
+  </section>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+  <!-- ─────────────  Horizontal Category Strip  ───────────── -->
+  <section class="category-strip">
+    <span>Design</span>
+    <span>Branding</span>
+    <span>Development</span>
+    <span>Strategy</span>
+    <span>Product Design</span>
+    <span>Motion Graphic</span>
+    <span>Art Direction</span>
+  </section>
 
-    <button type="submit">Send</button>
-  </form>
-</section>
+  <!-- ─────────────  Additional Sections Place-holders  ───────────── -->
+  <section id="about" class="full-section">
+    <h2>About Me</h2>
+    <!-- About-me content -->
+  </section>
 
-<footer>
-  &copy; 2025 Your Name. All rights reserved.
-</footer>
+  <section id="work" class="full-section">
+    <h2>Selected Work</h2>
+    <!-- Project cards go here -->
+  </section>
 
-<script src="js/projects.js"></script>
-<script src="js/script.js"></script>
+  <section id="news" class="full-section">
+    <h2>News & Articles</h2>
+    <!-- Blog / news feed -->
+  </section>
 
+  <section id="contact" class="full-section">
+    <h2>Let’s Work Together</h2>
+    <!-- Contact form -->
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
